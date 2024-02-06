@@ -14,3 +14,4 @@ Test Coverage:
 EverythingAboutPet feature contains all the positive and negative test cases with data driven testing for Pet endpoints from PetStore Swagger.
 Few negative test cases are not automated due to the mismatches between the expected and actual test results.
 Those are clearly updated in the feature file comments section.
+
