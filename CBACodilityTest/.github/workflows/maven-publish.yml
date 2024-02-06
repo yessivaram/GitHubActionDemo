@@ -1,21 +1,9 @@
-# This workflow will build a package using Maven and then publish it to GitHub packages when a release is created 
-# For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
-
 name: Run PetStore API automation test in GitHub Actions
 
-on:
-  push:
-   branches : [feature/Sivaram-CBATest]
-   
-  workflow_dispatch:
-  
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
+on: workflow_dispatch
+jobs: 
+  run-web-test:
+    runs-on: ubuntu-latest   
 
     steps:
     - uses: actions/checkout@v3
@@ -27,5 +15,6 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: Build with Maven
-      run: mvn clean test    
+    - name: Build and Run with Maven
+      run: 
+        mvn clean test    
