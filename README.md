@@ -1,2 +1,2 @@
 # CBACodilityTest
-This is Codility test for CBA interview
+This is Codility test for CBA intervie
