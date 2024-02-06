@@ -1,7 +1,7 @@
 CBACodilityTest (API Framework) - Instruction to run the project
 
 Pre-requisite:
-Java 8+ and Maven
+Java 8+ and Maven 
 
 Steps to follow:
 1. clone the repository from GitHub into your local directory
